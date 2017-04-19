@@ -24,6 +24,7 @@ public class ClassMenu extends Fragment{
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Menu Class");
+
         /*FloatingActionButton fab = (FloatingActionButton) findViewbyId(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,7 @@ public class ClassMenu extends Fragment{
             }
         });*/
        // FloatingActionButton fab=(FloatingActionButton)
+       // FloatingActionButton fab= FloatingActionButton
     }
 
 }
