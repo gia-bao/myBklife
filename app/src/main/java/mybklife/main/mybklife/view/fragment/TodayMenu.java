@@ -1,4 +1,4 @@
-package mybklife.main.mybklife;
+package mybklife.main.mybklife.view.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,13 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ExamMenu extends Fragment{
+import mybklife.main.mybklife.R;
+
+public class TodayMenu extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
-        return inflater.inflate(R.layout.fragment_menu_exam, container, false);
+        return inflater.inflate(R.layout.fragment_menu_today, container, false);
     }
 
 
@@ -21,7 +23,7 @@ public class ExamMenu extends Fragment{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-        getActivity().setTitle("Menu Exam");
+        getActivity().setTitle("Menu Today");
     }
 
 }

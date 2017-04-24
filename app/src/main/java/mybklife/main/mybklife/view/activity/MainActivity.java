@@ -1,11 +1,9 @@
-package mybklife.main.mybklife;
+package mybklife.main.mybklife.view.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import mybklife.main.mybklife.R;
+import mybklife.main.mybklife.view.fragment.ActivityFragment;
+import mybklife.main.mybklife.view.fragment.AssignmentMenu;
+import mybklife.main.mybklife.view.fragment.ClassMenu;
+import mybklife.main.mybklife.view.fragment.ExamMenu;
+import mybklife.main.mybklife.view.fragment.SettingMenu;
+import mybklife.main.mybklife.view.fragment.TodayMenu;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
        // FloatingActionButton fab=(FloatingActionButton) fi
-      //  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         /*fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +100,7 @@ public class MainActivity extends AppCompatActivity
                 fragment=new AssignmentMenu();
                 break;
             case R.id.nav_ActivityMenu:
-                fragment=new ActivityMenu();
+                fragment=new ActivityFragment();
                 break;
             case R.id.nav_SettingMenu:
                 fragment=new SettingMenu();
